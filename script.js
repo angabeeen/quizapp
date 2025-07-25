@@ -92,7 +92,7 @@ function getSelected() {
         answers.forEach(ans => ans.checked = false);
       }
       //
-      loadingQuiz(); // 👈 This starts the quiz on page load
+      loadingQuiz(); 
 
   //
   submitBtn.addEventListener('click', () => {
@@ -103,12 +103,12 @@ function getSelected() {
         score++;
       }
   
-      currentQuiz++; // move to next question
+      currentQuiz++; 
   
       if (currentQuiz < quizData.length) {
-        loadingQuiz(); // load next question
+        loadingQuiz(); 
       } else {
-        // show final result
+       
         document.getElementById('quiz').innerHTML = `
           <h2>You scored ${score} out of ${quizData.length}</h2>
           <button onclick="location.reload()">Reload</button>
